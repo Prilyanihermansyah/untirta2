@@ -3,14 +3,27 @@
 
 {% block content %}
 
+    <center>
+        <h2 style="background-color:whitesmoke;">FAKULTAS KEDOKTERAN</h2>
+    </center>
+
     <p></p>
-    <center><h1 style="background-color: #5F9EA0;">Fakultas Kedokteran</h1></center>
-    <center><img src="/static/untirta.jpg" alt=""></center>
-    <h2 style="background-color: #00FFFF;" >Yang Ada Di FK</h2>
-    <p style="background-color: #F0F8FF;" >Prodi Kedokteran</P>
-    <p style="background-color: #F0F8FF;" >Keperawatan S1</p>
-    <p style="background-color: #F0F8FF;" >Prodi Keperawatan D3</P>
-    <p style="background-color: #F0F8FF;" >Prodi S1 Gizi</p>
-    <p style="background-color: #F0F8FF;" >Prodi Ilmu Keolahragaan</p>
+    <center>
+        <img src="https://cdn.staticaly.com/img/bidikutama.com/wp-content/uploads/2019/02/FAKULTAS-KEDOKTERAN-UNTIRTA-1024x576.jpeg" alt="Fakultas kedokteran" width="500px">
+    </center>
+
+    <p></p>
+    <h3 style="background-color:rgba(23, 91, 108, 0.831);">Sejarah</h3>
+    <p style="font-family: 'times new roman'">{{ gbrumum }}</p>
+    <p style="font-family: 'times new roman'">FK Untirta yang terdiri atas 5 Program Studi merupakan salah satu strategi untuk mendukung program kesehatan di Provinsi Banten</p>
+    <p style="font-family: 'times new roman'">Program Studi ini bertujuan untuk menghasilkanntenaga dokter yang kompeten di tingkat nasional dan internasional. Program studi kedokteran Untirta merupakan langkah strategis dalam memperluas peran UNTIRTA pada masalah kesehatan yang dihadapi masyarakat Indonesia pada umumnya dan masyarakat banten pada khususnya.Program Studi Kedokteran UNTIRTA memperluas akses bagi putra dan putri terbaik lulusan SMA di Provinsi Banten.</p>
+    <p style="font-family: 'times new roman'">Kurikulum yang diterapkan adalah kurikulum yang mengacu pada Standar Kompetensi Indonesia (SKDI) 2012, yang merupakan kurikulum pendidikan dokter modern dengan menerapkan strategi pembelajaran yang berpusat pada mahasiswa, berbasis masalah, terintegrasi horizontal dan vertikal, berbasis komunitas, memungkinkan paparan terhadap setting klinik lebih awal, memberikan pilihan luas mahasiswa untuk mendalami bidang ilmu yang diinginkan dan pelaksanaan yang sistematik.</p>
+    
+    <h3 style="background-color:rgba(23, 91, 108, 0.831);">Program Studi</h2>
+    <p style="font-family: 'times new roman'">
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
 
 {% endblock %}

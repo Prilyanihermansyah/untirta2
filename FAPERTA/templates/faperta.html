@@ -3,13 +3,24 @@
 
 {% block content %}
 
+    <center>
+        <h2 style="background-color: whitesmoke;">FAKULTAS PERTANIAN</h2>  
+    </center>
+
     <p></p>
-   <center><p style="background-color: #5F9EA0;">Fakultas Pertanian</h1></center>
-    <center><img src="/static/untirta.jpg" alt=""></center>
-    <h2 style="background-color: #00FFFF;">Jurusan Yang Ada Di FP</h2>
-    <p style="background-color: #F0F8FF">Program Studi Agribisnis</p>
-    <p style="background-color: #F0F8FF;">Program Studi Agroekoteknologi</p>
-    <p style="background-color: #F0F8FF;">Programm Studi Ilmu Perikanan</p>
-    <p style="background-color: #F0F8FF;">Program Studi Teknologi Pangan</p>
+    <center><img src="https://bidikutama.com/wp-content/uploads/2021/05/IMG_3333.png" alt="Logo Untirta" width="500px"></center>
+    <p></p>
+    
+    <h4 style="background-color: rgba(23, 91, 108, 0.831) ;">Sejarah</h4>
+    <p style="font-family: 'times new roman'">Fakultas Pertanian Universitas Sultan Ageng Tirtayasa merupakan salah satu Fakultas yang ada di lingkungan Universitas Sultan Ageng Tirtayasa yang pada Agustus awalnya didirikan berdasarkan SK Ketua Yayasan Pendidikan Tirtayasa Nomor : 020/YPT/VIII/1984 tanggal 31 31 1984 dengan Jurusan Sosial Ekonomi Pertanian Program Studi Sosial Ekonomi pertanian. Sejalan dengan masyarakat dan kebutuhan akan kebutuhannya sarjana-sarjana bergerak dalam bidang produksi pertanian, pertanian, maka Fakultas Pertanian Universitas Sultan Ageng Ageng pada Tahun Akademik 2000/2001 membuka jurusan baru yaitu jurusan Agronomi jenjang S-1 dan izin menyelenggaraan SK Dirjen DIKTI Nomor : 046/B/T/2002, kemudian sesuai Surat Keputusan Badan Akreditasi Nasional Perguruan Tinggi, Nomor : 001/BAN-PT/Ak-XI/S1/IV/2008, tanggal 18 April 2008, tentang Hasil dan Peringkat Akreditasi Program Studi untuk Program Sarjana (S1) di Perguruan Tinggi, bagi Program Studi Agronomi sudah terakreditasidan sesuai SK BAN-PT, Nomor : 017/BAN-PT/Ak-X/S1/X/2006. Sesuai Surat Keputusan Direktur Jenderal Pendidikan Tinggi Nomor : 163/DIKTI/Kep/2007, tanggal 29 November 2007, tanggal perubahan nama program studi yang disesuaikan dengan nama baru, yakni dari Jurusan/Program Studi Sosial Ekonomi Pertanian menjadi Agribisnis dan Jurusan/Program Studi Agronomi menjadi Agroekoteknologi. Pada tahun 2008, sesuai surat Direktorat Jenderal Pendidikan Tinggi Nomor : 547/D/T/2008 tanggal 5 Maret 2008 tentang ijin penyelenggaraan Jurusan/Program Studi Perikanan (S-1) pada Universitas Sultan Ageng Tirtayasa, maka Tahun Akademik 2008/2009 Fakultas Pertanian Universitas Sultan Ageng Tirtayasa membuka program studi baru yakni Program Studi Perikanan. Kehadiran program studi perikanan merupakan suatu upaya turut sertanya Fakultas Pertanian Universitas Sultan Ageng Tirtayasa dalam mendukung pembangunan nasional dan daerah terutama pengembangan sumberdaya manusia (SDM) di sektor perikanan dalam bentuk kerjasama dengan instansi pemerintah, swasta, dan Perguruan Tinggi lain.</p>
+    <p style="font-family: 'times new roman'">{{ gbrumum }}</p>
+    <p style="font-family: 'times new roman'">Perubahan sosial politik yang terjadi di Indonesia telah ikut mempengaruhi perubahan yang terjadi pada Universitas Sultan Ageng Tirtayasa. Didasari oleh perkembangan Untirta sebagai Perguruan Tinggi Swasta yang kurang signifikan dan spirit era reformasi telah mendorong Pimpinan Universitas dan para Pimpinan Fakultas di lingkungan Universitas Tirtayasa serta Pengurus Yayasan Pendidikan Tirtayasa dan dukungan para tokoh Banten mengusulkan penegerian Universitas Sultan Ageng Tirtayasa kepada pemerintah pusat melalui Departemen Pendidikan Nasional. Selanjutnya pada tanggal 13 Oktober 1999 keluarlah Keppres RI Nomor; 130/1999 tentang Persiapan Perguruan Tinggi Negeri Universitas Sultan Ageng Tirtayasa. Atas kerja keras dan kesungguhan dari pimpinan Untirta dan pengurus Yayasan maka pada tahun 2001 berdasarkan Keputusan Presiden RI Nomor: 32 tanggal 19 Maret 2001 Universitas Sultan Ageng Tirtayasa secara resmi ditetapkan menjadi PerguruanTinggi Negeri definitif.</p>
+    
+    <h4 style="background-color: rgba(29, 91, 102, 0.568);">Program Studi</h4>
+    <p>
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
 
 {% endblock %}

@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'FKIP',
     'FT',
     'PASCASARJANA',
-    'Profil',
+    'profil',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +58,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'Untirta.urls'
+ROOT_URLCONF = 'UNTIRTA.urls'
 
 TEMPLATES = [
     {
@@ -76,7 +76,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Untirta.wsgi.application'
+WSGI_APPLICATION = 'UNTIRTA.wsgi.application'
 
 
 # Database
@@ -128,6 +128,7 @@ STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
+
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 

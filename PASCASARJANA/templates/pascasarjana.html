@@ -3,22 +3,24 @@
 
 {% block content %}
 
-    <p></p>
-    <center><h1 style="background-color: #5F9EA0;"> Pascasarjana</h1>
-        <center><img src="/static/untirta.jpg" alt=""></center>
-    <h2 style="background-color: #00FFFF;" >Jurusan Yang Ada Di PASCASARJANA</h2>
-    <p style="background-color: #F0F8FF;" >Doktor Pendidikan</P>
-    <p style="background-color: #F0F8FF;" >Doktor Ilmu Akuntansi</p>
-    <p style="background-color: #F0F8FF;" >Magister Ilmu Hukum</p>
-    <p style="background-color: #F0F8FF;" >Magister Ilmu Pertanian</p>
-    <p style="background-color: #F0F8FF;" >Magister Administrasi Publik</p>
-    <p style="background-color: #F0F8FF;" >Magister Akuntansi</p>
-    <p style="background-color: #F0F8FF;" >Magister Ilmu Komunikasi</p>
-    <p style="background-color: #F0F8FF;" >Magister Manajemen</p>
-    <p style="background-color: #F0F8FF;" >Magister Teknik Kimia</p>
-    <p style="background-color: #F0F8FF;" >Pendidikan Bahasa Indonesia</p>
-    <p style="background-color: #F0F8FF;" >Pendidikan Bahasa Inggris</p>
-    <p style="background-color: #F0F8FF;" >Pendidikan Matematika</p>
-    <p style="background-color: #F0F8FF;" >Teknologi Pendidikan</p>
+<center>
+    <h2 style="background-color:whitesmoke;">PASCASARJANA</h2>
+</center>
+
+<p></p>
+<center>
+    <img src="https://tse1.mm.bing.net/th?id=OIP.-u2Qvf-Kgihftcypwct1CAAAAA&pid=Api&P=0" alt="pascasarjana" width="500px">
+</center>
+
+<p></p>
+<h3 style="background-color:rgba(23, 91, 108, 0.831);">Sejarah</h3>
+<p style="font-family: 'times new roman'">{{ gbrumum }}</p>
+
+<h3 style="background-color:rgba(23, 91, 108, 0.831);">Program Studi</h2>
+<p style="font-family: 'times new roman'">
+{% for judul in jdl %}
+    <li>{{ judul }}</li>
+{% endfor %}
+</p>
 
 {% endblock %}
